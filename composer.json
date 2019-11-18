@@ -1,5 +1,5 @@
 {
-  "name": "cache/memcached",
+  "name": "swoft-cache/memcached",
   "type": "library",
   "version": "v2.0.6",
   "keywords": [
