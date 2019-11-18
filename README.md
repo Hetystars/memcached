@@ -7,12 +7,15 @@
 
 Swoft Memcached Component
 
+# Precondition
+  depend on swoft core frame-work
+  
 ## Install
 
 - composer command
 
 ```bash
-composer require swoft-cache/redis
+composer require swoft-cache/memcached
 ```
 
 ## Resources
