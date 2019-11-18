@@ -6,7 +6,7 @@
     "php",
     "swoole",
     "swoft",
-    "redis"
+    "memcached"
   ],
   "description": "swoft memcached component",
   "license": "Apache-2.0",
