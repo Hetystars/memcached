@@ -12,7 +12,7 @@ Swoft Memcached Component
 - composer command
 
 ```bash
-composer require swoft/redis
+composer require swoft-cache/redis
 ```
 
 ## Resources
