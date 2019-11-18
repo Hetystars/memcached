@@ -5,6 +5,7 @@ namespace Swoft\Memcached\Connector;
 
 use Memcached;
 use Swoft\Bean\Annotation\Mapping\Bean;
+use Swoft\Log\Helper\Log;
 use Swoft\Memcached\Contract\ConnectorInterface;
 use Swoft\Memcached\Exception\MemcachedException;
 use Swoft\Stdlib\Helper\JsonHelper;
@@ -72,6 +73,7 @@ class MemcachedConnector implements ConnectorInterface
                 } else if ($validNodes > 0) {
                     return;
                 } else if ($validNodes <= 0) {
+                    Log::error('memcached connect failed ,params:%s', JsonHelper::encode(['config' => $config, 'option' => $option], JSON_UNESCAPED_UNICODE));
                     throw new MemcachedException(
                         sprintf('memcached connect error(%s)', JsonHelper::encode($config, JSON_UNESCAPED_UNICODE))
                     );
