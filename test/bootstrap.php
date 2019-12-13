@@ -17,6 +17,7 @@ if (file_exists(dirname(__DIR__) . '/vendor/autoload.php')) {
     }
     // application's vendor
 } elseif (file_exists(dirname(__DIR__, 5) . '/autoload.php')) {
+    
     /** @var \Composer\Autoload\ClassLoader $loader */
     $loader = require dirname(__DIR__, 5) . '/autoload.php';
 
